@@ -1,0 +1,25 @@
+# Node
+npm-debug.log
+.env
+node_modules
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+# Preserve any configurations that are shared
+!.idea/runConfigurations/
+
+# vi
+*~
+
+# General
+log/
+*.log
+
+# git
+.gitinclude
