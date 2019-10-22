@@ -18,9 +18,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "node ./not-git-branch.js && npm test"
     }
   },
+  "protectedBranches": [
+    "development",
+    "master"
+  ],
   "lint-staged": {
     "*.js": [
       "eslint ./src --fix",
@@ -29,6 +33,7 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
+    "current-git-branch": "^1.1.0",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-config-standard": "^14.1.0",
